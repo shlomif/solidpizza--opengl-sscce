@@ -1,11 +1,11 @@
 CC=g++
 CFLAGS=-Wall -Wextra
 ISTRING=-I./
-LFLAGS=-lGLU -lGL -lglut
+LFLAGS=-lGLU -lGL -lglut -lGLEW -lglfw
 EXENAME=openglprog
 
 build:
-	$(CC) $(CFLAGS) $(ISTRING) main.cpp $(LFLAGS) -o $(EXENAME) 
+	$(CC) $(CFLAGS) $(ISTRING) main.cpp $(LFLAGS) -o $(EXENAME)
 
 check:
 	$(CC) $(CFLAGS) -c $(ISTRING) main.cpp
